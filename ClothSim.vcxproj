@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="glad.c" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Model\AABB.cpp" />
+    <ClCompile Include="Model\Animation.cpp" />
+    <ClCompile Include="Model\Mesh.cpp" />
+    <ClCompile Include="Model\Model.cpp" />
+    <ClCompile Include="Utility\GLCamera.cpp" />
+    <ClCompile Include="Utility\Shader.cpp" />
+    <ClCompile Include="Utility\stb_image.cpp" />
+    <ClCompile Include="Utility\Timer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Model\AABB.h" />
+    <ClInclude Include="Model\Animation.h" />
+    <ClInclude Include="Model\Mesh.h" />
+    <ClInclude Include="Model\Model.h" />
+    <ClInclude Include="Utility\Common.h" />
+    <ClInclude Include="Utility\GLCamera.h" />
+    <ClInclude Include="Utility\Shader.h" />
+    <ClInclude Include="Utility\stb_image.h" />
+    <ClInclude Include="Utility\Timer.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BCD164BF-063F-4B55-8B68-9C874CC1604F}</ProjectGuid>
+    <RootNamespace>ClothSim</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Users\Jordan\Documents\Visual Studio 2015\Projects\ClothSim\ClothSim\Includes;C:\Users\Jordan\Documents\GLAD\GL 4.3\include;C:\Users\Jordan\Documents\C++ Libraries\glfw-3.2.1.bin.WIN64\glfw-3.2.1.bin.WIN64\include\GLFW;C:\Users\Jordan\Documents\C++ Libraries\assimp-3.1.1\assimp-3.1.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Jordan\Documents\C++ Libraries\glfw-3.2.1.bin.WIN64\glfw-3.2.1.bin.WIN64\lib-vc2015;C:\Users\Jordan\Assimp\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Users\Jordan\Documents\Visual Studio 2015\Projects\ClothSim\ClothSim\Includes;C:\Users\Jordan\Documents\GLAD\GL 4.3\include;C:\Users\Jordan\Documents\C++ Libraries\glfw-3.2.1.bin.WIN64\glfw-3.2.1.bin.WIN64\include\GLFW;C:\Users\Jordan\Documents\C++ Libraries\assimp-3.1.1\assimp-3.1.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Jordan\Documents\C++ Libraries\glfw-3.2.1.bin.WIN64\glfw-3.2.1.bin.WIN64\lib-vc2015;C:\Users\Jordan\Assimp\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Users\Jordan\Documents\Visual Studio 2015\Projects\ClothSim\ClothSim\Includes;C:\Users\Jordan\Documents\GLAD\GL 4.3\include;C:\Users\Jordan\Documents\C++ Libraries\glfw-3.2.1.bin.WIN64\glfw-3.2.1.bin.WIN64\include\GLFW;C:\Users\Jordan\Documents\C++ Libraries\assimp-3.1.1\assimp-3.1.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Jordan\Documents\C++ Libraries\glfw-3.2.1.bin.WIN64\glfw-3.2.1.bin.WIN64\lib-vc2015;C:\Users\Jordan\Assimp\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Users\Jordan\Documents\Visual Studio 2015\Projects\ClothSim\ClothSim\Includes;C:\Users\Jordan\Documents\GLAD\GL 4.3\include;C:\Users\Jordan\Documents\C++ Libraries\glfw-3.2.1.bin.WIN64\glfw-3.2.1.bin.WIN64\include\GLFW;C:\Users\Jordan\Documents\C++ Libraries\assimp-3.1.1\assimp-3.1.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Jordan\Documents\C++ Libraries\glfw-3.2.1.bin.WIN64\glfw-3.2.1.bin.WIN64\lib-vc2015;C:\Users\Jordan\Assimp\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

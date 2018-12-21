@@ -1,0 +1,12 @@
+﻿  Mesh.cpp
+c:\users\jordan\documents\visual studio 2015\projects\clothsim\clothsim\mesh.cpp(103): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\jordan\documents\visual studio 2015\projects\clothsim\clothsim\mesh.cpp(120): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\jordan\documents\visual studio 2015\projects\clothsim\clothsim\mesh.cpp(173): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+c:\users\jordan\documents\visual studio 2015\projects\clothsim\clothsim\mesh.cpp(174): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+c:\users\jordan\documents\visual studio 2015\projects\clothsim\clothsim\mesh.cpp(290): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\users\jordan\documents\visual studio 2015\projects\clothsim\clothsim\mesh.cpp(291): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\users\jordan\documents\visual studio 2015\projects\clothsim\clothsim\mesh.cpp(292): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\users\jordan\documents\visual studio 2015\projects\clothsim\clothsim\mesh.cpp(346): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\jordan\documents\visual studio 2015\projects\clothsim\clothsim\mesh.cpp(366): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+  ClothSim.vcxproj -> C:\Users\Jordan\Documents\Visual Studio 2015\Projects\ClothSim\x64\Debug\ClothSim.exe
+  ClothSim.vcxproj -> C:\Users\Jordan\Documents\Visual Studio 2015\Projects\ClothSim\x64\Debug\ClothSim.pdb (Partial PDB)
